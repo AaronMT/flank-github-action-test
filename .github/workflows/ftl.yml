@@ -20,3 +20,10 @@ jobs:
         uses: gradle/gradle-build-action@v2.2.4
         with: 
           arguments: clean app:assembleDebug
+      - name: Flank Run
+        uses: Flank/flank@master
+        with: 
+          verson: v22.05.0
+          service:account: ${{ secrets.SERVICE_ACCOUNT }}
+          platform: android
+          flank_configuration_file: './flank-x86.yml'
