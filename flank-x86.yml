@@ -6,7 +6,7 @@ gcloud:
   num-flaky-test-attempts: 1
 
   # test and app are the only required args
-  app: /app/path 
+  app: app/build/outputs/apk/debug/app-debug.apk 
   test: /test/path
 
   auto-google-login: false
