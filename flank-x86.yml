@@ -26,7 +26,7 @@ gcloud:
      version: 30
      locale: en_US
 flank:
-  project: GOOGLE_PROJECT
+  project: moz-fenix
   max-test-shards: -1
   num-test-runs: 1
   output-style: compact
