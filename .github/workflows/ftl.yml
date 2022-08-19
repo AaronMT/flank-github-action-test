@@ -23,13 +23,10 @@ jobs:
         uses: gradle/gradle-build-action@v2.2.4
         with: 
           arguments: clean app:assembleDebug app:assembleDebugAndroidTest
-      - name: Main
-        run: |
-          ls
       - name: Flank Run
         uses: Flank/flank@master
         with: 
           version: v22.05.0
           service_account: ${{ secrets.SERVICE_ACCOUNT }}
           platform: android
-          flank_configuration_file: './flank-x86.yml'
+          flank_configuration_file: '${{ github.workspace }}/flank-x86.yml'
