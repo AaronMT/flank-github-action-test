@@ -6,8 +6,8 @@ gcloud:
   num-flaky-test-attempts: 1
 
   # test and app are the only required args
-  app: app/build/outputs/apk/debug/app-debug.apk 
-  test: app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+  app: ./app/build/outputs/apk/debug/app-debug.apk 
+  test: ./app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
 
   auto-google-login: false
   use-orchestrator: true
