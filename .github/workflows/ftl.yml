@@ -23,6 +23,9 @@ jobs:
         uses: gradle/gradle-build-action@v2.2.4
         with: 
           arguments: clean app:assembleDebug app:assembleDebugAndroidTest
+      - name: Main
+        run: |
+          ls
       - name: Flank Run
         uses: Flank/flank@master
         with: 
