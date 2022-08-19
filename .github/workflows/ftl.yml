@@ -28,4 +28,4 @@ jobs:
           version: v22.05.0
           service_account: ${{ secrets.SERVICE_ACCOUNT }}
           platform: android
-          flank_configuration_file: '${{ github.workspace }}/fenix/automation/taskcluster/androidTest/flank-x86.yml'
+          flank_configuration_file: '${{ github.workspace }}/automation/taskcluster/androidTest/flank-x86.yml'
