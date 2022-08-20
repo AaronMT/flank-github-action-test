@@ -24,8 +24,7 @@ jobs:
           arguments: clean app:assembleDebug app:assembleDebugAndroidTest
       - name: Debug
         run: | 
-          ls -al
-          ls -al app
+          ls -al app/build/*
       - name: Flank Run
         uses: Flank/flank@master
         with: 
