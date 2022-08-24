@@ -21,9 +21,6 @@ jobs:
       - name: Setup Gradle Build Action
         uses: gradle/gradle-build-action@v2.2.5
         with:
-          wrapper-cache-enabled: true
-          dependencies-cache-enabled: true
-          configuration-cache-enabled: true
           arguments: clean app:assembleDebug app:assembleDebugAndroidTest
       - name: Flank Run
         uses: Flank/flank@master
