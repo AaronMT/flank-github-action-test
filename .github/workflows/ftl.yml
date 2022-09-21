@@ -21,7 +21,7 @@ jobs:
       - name: Setup Gradle Build Action
         uses: gradle/gradle-build-action@v2.2.5
         with:
-          arguments: clean app:assembleFocusDebug app:connectedFocusDebugAndroidTest
+          arguments: clean app:assembleFocusDebug app:assembleFocusDebugAndroidTest
       - name: Flank Run
         uses: Flank/flank@master
         with: 
